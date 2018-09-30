@@ -13,13 +13,12 @@ function registerSW() {
       console.log('Registration failed!');
     });
 }
-registerSW();
-
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
+  registerSW();
   initMap(); // added
   fetchNeighborhoods();
   fetchCuisines();
