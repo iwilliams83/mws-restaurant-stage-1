@@ -187,11 +187,7 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
-/*
-- Remove fixed positioning from header
-- media query for map-container to remove fixed position and give height
-- media query for maincontainer to have flex direction column
-*/
+
 
 .inside header {
   position: fixed;

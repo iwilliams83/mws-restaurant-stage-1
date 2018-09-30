@@ -48,6 +48,7 @@ fillNeighborhoodsHTML = (neighborhoods = self.neighborhoods) => {
     const option = document.createElement('option');
     option.innerHTML = neighborhood;
     option.value = neighborhood;
+    option.role = "menuitem"
     select.append(option);
   });
 }
@@ -76,6 +77,7 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
     const option = document.createElement('option');
     option.innerHTML = cuisine;
     option.value = cuisine;
+    option.role = "menuitem"
     select.append(option);
   });
 }
@@ -172,6 +174,7 @@ createRestaurantHTML = (restaurant) => {
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
+  image.alt = `photo from ${restaurant.name} restaurant`
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
 
